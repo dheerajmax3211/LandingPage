@@ -1,0 +1,174 @@
+body{
+    font-family: "piedra", sans-serif;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+   list-style: none;
+}
+
+.navbar{
+    width: 90%;
+    margin: auto;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.nav-container{
+    padding: 20px 0;
+}
+
+.nav-container h2{
+    color: rgb(29,29,29)
+}
+
+.nav-container .nav{
+    justify-self: flex-end;
+    display: flex;
+}
+
+.nav-container .nav a{
+    margin: 0 20px ;
+    color: black;
+}
+
+.nav-container .nav .active{
+    background: #333;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+}
+.header{
+    width: 80%;
+    margin: 70px auto;
+}
+.container img{
+    width: 110%;
+    margin-top: 60px;
+    animation: mobile 15s infinite;
+}
+@keyframes mobile{
+    0%{
+        transform: scale(1.0);
+    }
+    12.5%{
+        transform: scale(1.04);
+    }
+    25%{
+        transform: scale(1.09);
+    }
+    50%{
+        transform: scale(1.13);
+    }
+    75%{
+        transform: scale(1.09);
+    }
+    88.5%{
+        transform: scale(1.04);
+    }
+    100%{
+        transform: scale(1.0);  
+    }
+
+}
+.container div h3{
+    font-size: 50px;
+    }
+
+    .container div h3:after{
+        content: "";
+        background: rgba(23, 125, 165);
+        position: absolute ;
+        height: 3px ;
+        width: 130px;   
+        top: 49%;
+        left: 15%;
+ }
+  .container div p{
+      margin: 10px 0;
+  }
+  .container div a{
+      padding: 15px;
+      background: #333;
+      margin: 20px 0;
+      display: inline-block ;
+      color: #ffffff;
+      border-radius: 10px;
+
+   }
+   .phone{
+     position: absolute;
+    top:23%;
+    left: 5%;
+    transform:  scale(1.4);
+    opacity: .3;
+    z-index: -1;
+    }
+
+    .footer{
+        margin: 100px 0 0 0;
+        background: #333;
+        padding: 100px 100px;
+
+    }
+
+    .footer .main-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 2rem ;
+    }
+    .main-container div h4{
+        color: rgb(255, 255, 255);
+        font-size: 35px;
+        margin: 10px 0;
+    }
+    .main-container div li{
+        cursor: pointer;
+        color: whitesmoke;
+        font-size: 20px;
+        margin: 3px 0;
+    }
+    .main-container div li:hover{
+        cursor: pointer;
+        animation: colore 1s infinite;
+        
+        font-size: 20px;
+        margin: 3px 0;
+    }
+    @keyframes colore{
+        0%{
+            color: white;
+        }
+        25%{
+            color: yellow;
+        }
+        50%{
+            color: orangered;
+        }
+        100%{
+            color: red;
+        }
+    }
+
+    hr{
+        margin: 20px 0;
+        opacity: .4;
+    }
+    .huawei{
+        margin-top: 50px;
+    }
+    .huawei h1{
+        font-size: 150px !important;
+    }
+    .huawei p{
+        position: absolute;
+        top: 50%;
+        font-size: 60px !important;
+    }
